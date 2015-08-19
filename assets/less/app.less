@@ -1,0 +1,74 @@
+/*!
+ * Roots 6.5.2
+ */
+
+@import "bootstrap/bootstrap.less";
+
+// Core variables and mixins
+@import "theme/generic/variables.less";
+/*@import "generic/mixins.less";
+@import "generic/reset.less";*/
+
+
+// Basic styles
+@import "theme/base/main.less";
+/*@import "base/links.less";
+@import "base/lists.less";
+@import "base/headings.less";*/
+
+
+// Components
+@import "theme/objects/header.less";
+//@import "objects/footer.less";
+
+
+
+img {
+    padding: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    display: block;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.item {
+    width: 20%;
+}
+
+.item.w2 {
+    width: 40%;
+}
+
+.image-wrapper {
+    margin: 5px;
+    overflow: hidden;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.item.rose:hover .image-wrapper {
+    background-color: #FE4365;
+}
+.item.blue:hover .image-wrapper { background-color: #189acb; }
+.item.orange:hover .image-wrapper { background-color: #F38630; }
+.item.green:hover .image-wrapper { background-color: #B3CC57; }
+
+.item:hover img {
+    opacity: 0.2;
+    -webkit-transform: scale(1.06);
+    -ms-transform: scale(1.06);
+    transform: scale(1.06);
+}
+
+@media (min-width: 1601px) {
+
+    .item {
+        width: 10%;
+    }
+
+    .item.w2 {
+        width: 20%;
+    }
+}
